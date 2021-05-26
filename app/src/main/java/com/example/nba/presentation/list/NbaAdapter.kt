@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.nba.R
 
 
-class NbaAdapter(private var dataSet: List<Team>) :
+class NbaAdapter(private var dataSet: List<Team>, var listener: ((Int) -> Unit)?=null) :
     RecyclerView.Adapter<NbaAdapter.ViewHolder>() {
 
     /**
@@ -24,7 +24,7 @@ class NbaAdapter(private var dataSet: List<Team>) :
         }
     }
 
-    fun updateList(list: ArrayList<String>){
+    fun updateList(list: List<Team>){
         dataSet=list
         notifyDataSetChanged()
     }
@@ -43,8 +43,11 @@ class NbaAdapter(private var dataSet: List<Team>) :
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        val team:Team=dataSet[position]
+        val team :Team=dataSet[position]
         viewHolder.textView.text =team.name
+        viewHolder.itemView.setOnClickListener {
+            listener?.invoke(position)
+        }
     }
 
     // Return the size of your dataset (invoked by the layout manager)
