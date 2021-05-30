@@ -1,12 +1,12 @@
 # Android_Application_NBA
 
-##Projet Android Studio
+# #Projet Android Studio
 
-##Langage : Kotlin
+## Langage : Kotlin
 
-##Sujet choisi : NBA, liste des franchises avec leur nom de ville.
+## Sujet choisi : NBA, liste des franchises avec leur nom de ville.
 
-##Description  de l'application
+## Description  de l'application
 
 L'application permet à l'utilisateur d'apercevoir les différentes équipes de la ligue, avec leur villes respectives. Elle affiche donc la liste des franchises NBA.
 
