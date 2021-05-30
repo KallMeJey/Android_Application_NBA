@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/star"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,10 +11,13 @@
         android:id="@+id/nba_detail_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintVertical_bias="0.4"
-
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"></TextView>
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.140"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"
+        android:textColor="#FF0000"
+        app:layout_constraintVertical_bias="0.1"></TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>
